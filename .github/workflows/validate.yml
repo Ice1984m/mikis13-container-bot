@@ -1,0 +1,23 @@
+name: Validate Container Bot
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate
+        run: |
+          chmod +x scripts/*.sh
+          ./scripts/diagnose.sh

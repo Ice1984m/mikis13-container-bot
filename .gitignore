@@ -1,0 +1,10 @@
+.env
+.env.*
+*.key
+*.token
+*.pem
+*.log
+*.jsonl
+reports/
+state/
+tmp/

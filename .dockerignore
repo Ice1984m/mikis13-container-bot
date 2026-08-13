@@ -1,0 +1,15 @@
+.git
+.github
+node_modules
+.env
+.env.*
+*.key
+*.token
+*.pem
+*.log
+*.jsonl
+reports
+state
+tmp
+security.env
+openai.key
