@@ -18,6 +18,8 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Validate
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           chmod +x scripts/*.sh
           ./scripts/diagnose.sh
